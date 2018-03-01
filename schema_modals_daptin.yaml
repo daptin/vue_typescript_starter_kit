@@ -1,0 +1,15 @@
+Tables:
+  - TableName: todo
+    Columns:
+      - Name: title
+        ColumnType: label
+        DataType: varchar(300)
+        IsIndexed: true
+      - Name: completed
+        ColumnType: truefalse
+        DataType: int(1)
+        Default: false
+Imports:
+  - FilePath: /data/initial.json
+    Entity: site
+    FileType: json

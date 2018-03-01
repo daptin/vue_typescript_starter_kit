@@ -1,0 +1,32 @@
+{
+  "user": [
+    {
+      "confirmed": "0",
+      "email": "admin@dapt.in",
+      "name": "my name",
+      "password": "password",
+      "reference_id": "e170f0fd-fd0a-43f3-89b4-157cae602622"
+    }
+  ],
+  "cloud_store": [
+    {
+      "name": "local",
+      "reference_id": "94c0b965-0eca-435a-bef0-eae334614319",
+      "root_path": "local:/site",
+      "store_parameters": "",
+      "store_provider": "local",
+      "store_type": "local",
+      "user_id": "e170f0fd-fd0a-43f3-89b4-157cae602622"
+    }
+  ],
+  "site": [
+    {
+      "cloud_store_id": "94c0b965-0eca-435a-bef0-eae334614319",
+      "hostname": "localhost",
+      "name": "default",
+      "path": "todo",
+      "reference_id": "866ea8dd-9c32-461b-ae7e-b442eee01324",
+      "user_id": "e170f0fd-fd0a-43f3-89b4-157cae602622"
+    }
+  ]
+}
