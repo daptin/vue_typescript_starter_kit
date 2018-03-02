@@ -117,7 +117,7 @@ export default new Vuex.Store<State>({
 
 ## ...and here is one of the two VUE components in the project. so simple!
 
-```typescript
+```vue
 <template>
   <div class="link">
       <a :href="link.url">{{link.description}}</a>
