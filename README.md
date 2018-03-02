@@ -5,7 +5,52 @@
 > Typescript typing works throughout as far as I can tell, including within single-file VUE components  
 > Webpack works great both in dev mode (dev server with auto-reload), and in build mode    
 
-## Build Setup
+# Backend Build Setup
+
+- Edit: schema_modals_daptin.yaml
+```
+Tables:
+  - TableName: todo
+    Columns:
+      - Name: title
+        ColumnType: label
+        DataType: varchar(300)
+        IsIndexed: true
+      - Name: completed
+        ColumnType: truefalse
+        DataType: int(1)
+        Default: false
+```
+- Build docker image
+
+```./build.sh```
+- Bring up the backend, exposed at port `8080`
+
+```docker-compose up -d```
+
+> Always rebuild docker image if changing schema_models_daptin.yaml
+
+# Client for backend
+
+```javascript
+
+import {DaptinClient} from 'daptin-client'
+```
+
+
+
+```
+const daptinClient = new DaptinClient("http://localhost:8080", false);
+daptinClient.worldManager.loadModels().then(function () {
+  daptinClient.jsonApi.findAll("todo").then(function(res: any){
+    console.log("all todos", res.data)
+  })
+})
+
+```
+
+
+## Frontend Build Setup
 
 ``` bash
 # install dependencies

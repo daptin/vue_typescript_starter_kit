@@ -9,7 +9,3 @@ Tables:
         ColumnType: truefalse
         DataType: int(1)
         Default: false
-Imports:
-  - FilePath: /data/initial.json
-    Entity: site
-    FileType: json

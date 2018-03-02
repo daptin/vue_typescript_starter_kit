@@ -1,0 +1,4 @@
+Imports:
+  - FilePath: /data/initial.json
+    Entity: site
+    FileType: json
