@@ -3,7 +3,7 @@ services:
     web:
         image: myapp
         ports:
-            - "8080:8080"
+            - "6336:8080"
         restart: always
         environment:
           DAPTIN_PORT: '8080'

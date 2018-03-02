@@ -40,7 +40,7 @@ import {DaptinClient} from 'daptin-client'
 
 
 ```
-const daptinClient = new DaptinClient("http://localhost:8080", false);
+const daptinClient = new DaptinClient("http://localhost:6336", false);
 daptinClient.worldManager.loadModels().then(function () {
   daptinClient.jsonApi.findAll("todo").then(function(res: any){
     console.log("all todos", res.data)
@@ -56,7 +56,7 @@ daptinClient.worldManager.loadModels().then(function () {
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8081
 npm run dev
 
 # build for production with minification
