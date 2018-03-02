@@ -1,5 +1,7 @@
 # vuejs_typescript_starter_kit
 
+https://github.com/hmexx/vue_typescript_starter_kit
+
 > A Vue.js/Typescript/Vuex/Webpack starter pack  
 > I've basically tried to put together the minimum you need to get started   
 > Typescript typing works throughout as far as I can tell, including within single-file VUE components  
